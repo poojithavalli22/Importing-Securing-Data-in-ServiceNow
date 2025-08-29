@@ -1,50 +1,64 @@
-# Importing-Securing-Data-in-ServiceNow
+Project: Importing & Securing Data in ServiceNow
 📌 Project Overview
-
 This project demonstrates how to import employee training data into ServiceNow, link it with employee records, and enforce secure access using ACLs and role-based permissions. It highlights best practices for data integrity and access control within an enterprise ServiceNow environment.
 
 ✨ Key Features
+Data Import & Mapping: Import structured data from external files using Import Sets & Transform Maps.
 
-Data Import & Mapping – Import structured data from external files using Import Sets & Transform Maps.
+Dot-Walking: Automatically retrieve related employee information (like Department) from linked records.
 
-Dot-Walking – Automatically retrieve related employee information (like Department) from linked records.
+Access Control (ACLs): Restrict access at the table and field level based on user roles.
 
-Access Control (ACLs) – Restrict access at table/field level based on roles.
+Role-Based Permissions: Provide separate and distinct access rights for HR Manager and Admin users.
 
-Role-Based Permissions – Provide separate access rights for HR Manager and Admin users.
+Custom Tables & Fields: Create tailored data structures to manage employee training records efficiently.
 
-Custom Tables & Fields – Create tailored structures to manage employee training records.
+Impersonation Testing: Verify visibility and edit permissions for different user roles to ensure security policies are correctly enforced.
 
-Impersonation Testing – Verify visibility and editability for different user roles.
-
-Scalability & Security – Designed to handle large datasets while ensuring secure operations.
-
-
+Scalability & Security: Designed with a framework that handles large datasets while maintaining robust security operations.
 
 🛠️ Tech Stack
-
 Platform: ServiceNow
-Modules Used: Import Sets, Transform Maps, ACLs, Roles, System Security
-Tools: ServiceNow Studio, ACL Editor
 
+Modules Used:
 
+Import Sets
+
+Transform Maps
+
+Access Control Lists (ACLs)
+
+Roles & Permissions
+
+System Security
+
+Tools:
+
+ServiceNow Studio
+
+ACL Editor
 
 📂 Project Workflow
+Ideation: Define the core problem and the scope of the project.
 
-Ideation – Define problem and scope.
+Requirement Analysis: Specify the need for a custom table, import sets, role definitions, and specific ACLs.
 
-Requirement Analysis – Custom table, import sets, ACLs, role definitions.
+Design: Architect the custom 'Employee Training' table with the following fields: Training Name, Completion Date, Status, and an Employee field referencing the User [sys_user] table.
 
-Design – Employee training table with fields: Training Name, Completion Date, Status, Employee (reference to sys_user).
+Development:
 
-Development –
-Import data via Import Sets & Transform Maps
-Configure dot-walking for employee department
-Implement ACLs for Read/Write security
-Create HR Manager role and assign permissions
+Import the external data using Import Sets and configure Transform Maps.
 
-Testing –
-Impersonate HR Manager → verify access to training records
-Impersonate other users → verify restricted access
+Configure dot-walking to display the employee's department directly in the training record list.
 
-Conclusion – Evaluate success of secure data import and access management.
+Implement ACLs to manage Read/Write security rules.
+
+Create a dedicated 'HR Manager' role and assign the necessary permissions.
+
+Testing:
+
+Impersonate the 'HR Manager' to verify appropriate access to view and modify training records.
+
+Impersonate other users (without the specific role) to verify that access is correctly restricted.
+
+Conclusion: Evaluate the overall success of the secure data import process and the effectiveness of the access management solution.
