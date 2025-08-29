@@ -6,11 +6,17 @@ This project demonstrates how to import employee training data into ServiceNow, 
 ✨ Key Features
 
 Data Import & Mapping – Import structured data from external files using Import Sets & Transform Maps.
+
 Dot-Walking – Automatically retrieve related employee information (like Department) from linked records.
+
 Access Control (ACLs) – Restrict access at table/field level based on roles.
+
 Role-Based Permissions – Provide separate access rights for HR Manager and Admin users.
+
 Custom Tables & Fields – Create tailored structures to manage employee training records.
+
 Impersonation Testing – Verify visibility and editability for different user roles.
+
 Scalability & Security – Designed to handle large datasets while ensuring secure operations.
 
 🛠️ Tech Stack
