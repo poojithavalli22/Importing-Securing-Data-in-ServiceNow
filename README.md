@@ -19,11 +19,15 @@ Impersonation Testing – Verify visibility and editability for different user r
 
 Scalability & Security – Designed to handle large datasets while ensuring secure operations.
 
+
+
 🛠️ Tech Stack
 
 Platform: ServiceNow
 Modules Used: Import Sets, Transform Maps, ACLs, Roles, System Security
 Tools: ServiceNow Studio, ACL Editor
+
+
 
 📂 Project Workflow
 
